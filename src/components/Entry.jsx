@@ -24,7 +24,7 @@ export default function Entry(props) {
             <div className="details">
                 <div className="location">
                     <img
-                        src="/src/images/marker.ico" 
+                        src="./images/marker.ico" 
                         alt="Map Marker Icon" 
                         className="marker"
                     />

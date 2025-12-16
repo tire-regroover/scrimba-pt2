@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header>
-            <img src="/src/images/banana.jpg" alt="Logo" />
+            <img src="./images/banana.jpg" alt="Logo" />
             <h1>my dum travel journal.</h1>
         </header>
     )

@@ -7,7 +7,7 @@ function App() {
       <Header />
       <main>
         <Entry 
-          image="/src/images/fuji.png"
+          image="./images/fuji.png"
           country="Japan" 
           map-link="https://goo.gl/maps/1DGM5WrWnATgkSNB8"
           title="Mount Fuji" 
@@ -15,7 +15,7 @@ function App() {
           description="Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,389 feet). 
           It is an active stratovolcano that last erupted in 1707." />
         <Entry 
-          image="/src/images/fuji2.png"
+          image="./images/fuji2.png"
           country="Japan" 
           map-link="https://goo.gl/maps/1DGM5WrWnATgkSNB8" 
           title="Mount Fuji 2" 
@@ -23,7 +23,7 @@ function App() {
           description="Mount Fuji 2 is the second tallest mountain in Japan, standing at 3,775 meters (12,388 feet). 
           It is an active stratovolcano that last erupted in 1706." />
         <Entry 
-          image="/src/images/banana.jpg"
+          image="./images/banana.jpg"
           country="Japan" 
           map-link="https://goo.gl/maps/1DGM5WrWnATgkSNB8" 
           title="Banana" 

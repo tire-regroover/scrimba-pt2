@@ -24,7 +24,7 @@ function App() {
           It is an active stratovolcano that last erupted in 1706." />
         <Entry 
           image="./images/banana.jpg"
-          country="Japan" 
+          country="Banana Land"
           map-link="https://goo.gl/maps/1DGM5WrWnATgkSNB8" 
           title="Banana" 
           date="14 Jan, 2021" 

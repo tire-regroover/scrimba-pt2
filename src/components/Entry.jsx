@@ -13,12 +13,12 @@
  *   currently are, so don't worry about the fact that you're hard-coding all
  *   this data into the component.
  */
-export default function Entry() {
+export default function Entry(props) {
     return (
         <article className="entry">
             <img 
-                src="/src/images/fuji.png" 
-                alt="Mount Fuji" 
+                src={props.image}
+                alt={"Photo of " + props.title }
                 className="photo"
             />
             <div className="details">
@@ -28,21 +28,18 @@ export default function Entry() {
                         alt="Map Marker Icon" 
                         className="marker"
                     />
-                    <span className="country">JAPAN</span>
+                    <span className="country">{props.country}</span>
                     <a
-                        href="https://goo.gl/maps/1DGM5WrWnATgkSNB8" 
+                        href="{props.map-link}"
                         target="_blank" 
                         className="map-link"
                     >
                         View on Google Maps
                     </a>
                 </div>
-                <h2 className="title">Mount Fuji</h2>
-                <h3 className="date">12 Jan, 2021 - 24 Jan, 2021</h3>
-                <p className="description">
-                    Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). 
-                    Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
-                </p>
+                <h2 className="title">{props.title}</h2>
+                <h3 className="date">{props.date}</h3>
+                <p className="description">{props.description}</p>
             </div>
         </article>
     )

@@ -49,10 +49,15 @@ header>img {
 
 .details {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .location {
   margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .marker {

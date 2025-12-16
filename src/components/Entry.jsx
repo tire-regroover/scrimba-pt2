@@ -30,7 +30,7 @@ export default function Entry(props) {
                     />
                     <span className="country">{props.country}</span>
                     <a
-                        href="{props.map-link}"
+                        href={props.maplink}
                         target="_blank" 
                         className="map-link"
                     >

@@ -19,7 +19,7 @@ header {
   justify-content: center;
   background-color: #fb4b58;
   padding: 5px;
-  color: #ffcdcc;
+  color: #fff;
 }
 
 header h1 {
@@ -80,6 +80,7 @@ header>img {
 .title {
   font-size: 1.7rem;
   margin: 0 0 23px 0;
+  color: #2d2521;
 }  
 
 .date {

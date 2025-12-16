@@ -1,7 +1,17 @@
 import Entry from "./components/Entry"
 import Header from "./components/Header"
+import { useEffect } from 'react';
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    if (Math.random() < 0.5) {
+      document.querySelector("#logo").classList.add("spinleft");
+    } else {
+      document.querySelector("#logo").classList.add("spinright");
+    }
+
+  }, []);
+
   return (
     <>
       <Header />

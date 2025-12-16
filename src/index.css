@@ -27,9 +27,39 @@ header h1 {
   font-weight: 400;
 }
 
-header>img {
+#logo {
   margin-right: 10px;
   height: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinleft {
+    animation: spinleft infinite 20s linear;
+  }
+}
+
+@keyframes spinleft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinright{
+    animation: spinright infinite 20s linear;
+  }
+}
+
+@keyframes spinright{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .entry {

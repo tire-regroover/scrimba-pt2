@@ -10,6 +10,7 @@ html, body, #root {
 body {
   font-family: "Inter", sans-serif;
   color: #fff;
+  overflow-x: hidden;
 }
 
 header {
@@ -18,10 +19,11 @@ header {
   justify-content: center;
   background-color: #fb4b58;
   padding: 5px;
+  color: #ffcdcc;
 }
 
-header>* {
-  font-size: 12pt;
+header h1 {
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -31,33 +33,31 @@ header>img {
 }
 
 .entry {
-  color: #000;
+  color: #364357;
   display: flex;
   align-items: center;
-  margin: 20px;
+  gap: 30px;
+  margin: 20px auto;
+  width: calc(100% - 40px);
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0,0,0,.3);
   padding: 30px;
 } 
 
 .photo {
-  height: 200px;
-  width: 150px;
-  margin-right: 40px;
+  width: clamp(120px, 15%, 300px);
   border-radius: 5px;
+  flex-shrink: 0;
+  object-fit: cover;
 } 
 
 .details {
   margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  flex: 1;
 }
 
 .location {
   margin-bottom: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .marker {
@@ -68,25 +68,41 @@ header>img {
 .country {
   margin-right: 16px;
   letter-spacing: .15rem;
-  font-size: 12pt;
+  font-size: 1rem;
   text-transform: uppercase;
-}
+} 
 
-a.map-link, a.map-link:visited {
+.map-link {
   color: #888;
-  font-size: 10pt;
-}
+  font-size: 0.8rem;
+} 
 
 .title {
-  font-size: 20pt;
-  margin: 0;
-  margin-bottom: 23px;
-}
+  font-size: 1.7rem;
+  margin: 0 0 23px 0;
+}  
 
 .date {
-  font-size: 11pt;
-}
+  font-size: 0.9rem;
+}  
 
 .description {
-  font-size: 10pt;
+  font-size: 0.8rem;
+}  
+
+@media (max-width: 600px) {
+  .entry {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .photo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
 }

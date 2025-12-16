@@ -1,46 +1,23 @@
-/**
- * Challenge: Build out the Entry component and render 1 instance of it
- * to the App
- * 
- * For now, just hard-code in the data, which you can find in
- * japan.md so you don't have to type it all out manually :)
- * 
- * Notes:
- * – Only render 1 instance of this Entry component for now
- * – I've pulled in marker.png for the little map marker icon
- *   that goes next to the location name
- * – The main purpose of this challenge is to show you where our limitations
- *   currently are, so don't worry about the fact that you're hard-coding all
- *   this data into the component.
- */
-export default function Entry(props) {
-    return (
-        <article className="entry">
-            <img 
-                src={props.image}
-                alt={"Photo of " + props.title }
-                className="photo"
-            />
-            <div className="details">
-                <div className="location">
-                    <img
-                        src="./images/marker.ico" 
-                        alt="Map Marker Icon" 
-                        className="marker"
-                    />
-                    <span className="country">{props.country}</span>
-                    <a
-                        href={props.maplink}
-                        target="_blank" 
-                        className="map-link"
-                    >
-                        View on Google Maps
-                    </a>
-                </div>
-                <h2 className="title">{props.title}</h2>
-                <h3 className="date">{props.date}</h3>
-                <p className="description">{props.description}</p>
-            </div>
-        </article>
-    )
+export default function Entry({ image, title, country, maplink, date, description }) {
+  return (
+    <article className="entry">
+      <img src={image} alt={`Photo of ${title}`} className="photo" />
+
+      <div className="details">
+        <div className="location">
+          <a href={maplink} target="_blank" rel="noopener noreferrer" aria-hidden="true">
+            <img src="./images/marker.ico" alt="" className="marker" />
+          </a>
+          <span className="country">{country}</span>
+          <a href={maplink} target="_blank" rel="noopener noreferrer" className="map-link">
+            View on Google Maps
+          </a>
+        </div>
+
+        <h2 className="title">{title}</h2>
+        <h3 className="date">{date}</h3>
+        <p className="description">{description}</p>
+      </div>
+    </article>
+  );
 }

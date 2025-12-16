@@ -21,7 +21,7 @@ function App() {
           title="Mount Fuji 2" 
           date="13 Jan, 2021" 
           description="Mount Fuji 2 is the second tallest mountain in Japan, standing at 3,775 meters (12,388 feet). 
-          It is an active stratovolcano that last erupted in 1706." />
+          It is an active stratovolcano that last erupted in 1708." />
         <Entry 
           image="./images/banana.jpg"
           country="Banana Land"

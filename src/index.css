@@ -69,6 +69,7 @@ header>img {
   margin-right: 16px;
   letter-spacing: .15rem;
   font-size: 12pt;
+  text-transform: uppercase;
 }
 
 a.map-link, a.map-link:visited {

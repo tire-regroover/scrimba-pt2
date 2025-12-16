@@ -27,6 +27,16 @@ header h1 {
   font-weight: 400;
 }
 
+#home-button {
+  position: absolute;
+  left: 10px
+}
+
+#home {
+  height: 38px; 
+  opacity: 0.1;
+}
+
 #logo {
   margin-right: 10px;
   height: 40px;

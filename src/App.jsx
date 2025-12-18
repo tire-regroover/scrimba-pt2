@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       <main>
         <Entry 
-          image="./images/fuji.png"
+          image={{ src: "./images/fuji.png", alt: "Photo of Mount Fuji" }}
           country="Japan" 
           maplink="https://maps.app.goo.gl/L44EdgysFv1BPjk58"
           title="Mount Fuji" 
@@ -25,7 +25,7 @@ const App = () => {
           description="Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,389 feet). 
           It is an active stratovolcano that last erupted in 1707." />
         <Entry 
-          image="./images/fuji2.png"
+          image={{ src: "./images/fuji2.png", alt: "Photo of Mount Fuji 2" }}
           country="Japan" 
           maplink="https://maps.app.goo.gl/L44EdgysFv1BPjk58" 
           title="Mount Fuji 2" 
@@ -33,7 +33,7 @@ const App = () => {
           description="Mount Fuji 2 is the second tallest mountain in Japan, standing at 3,775 meters (12,388 feet). 
           It is an active stratovolcano that last erupted in 1708." />
         <Entry 
-          image="./images/banana.jpg"
+          image={{ src: "./images/banana.jpg", alt: "Photo of a banana" }}
           country="Banana Land"
           maplink="https://maps.app.goo.gl/jmTdv64eS4uTQij28" 
           title="Banana" 

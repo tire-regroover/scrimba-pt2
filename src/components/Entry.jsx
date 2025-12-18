@@ -1,7 +1,7 @@
 export default function Entry({ image, title, country, maplink, date, description }) {
   return (
     <article className="entry">
-      <img src={image} alt={`Photo of ${title}`} className="photo" />
+      <img src={image.src} alt={image.alt} className="photo" />
 
       <div className="details">
         <div className="location">

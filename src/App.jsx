@@ -16,7 +16,7 @@ const App = () => {
   const entries = entriesData.map(entry => (
     <Entry 
       key={entry.id}
-      image={entry.image}
+      image={{src: entry.image.src, alt: entry.image.alt}}
       country={entry.country}
       maplink={entry.maplink}
       title={entry.title}
